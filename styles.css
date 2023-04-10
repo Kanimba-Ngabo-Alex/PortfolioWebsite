@@ -1,0 +1,485 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+    background-color: #15151b;
+    overflow: hidden;
+  
+  }
+
+  h1{
+    color: white;
+    font-family: "Space Mono", monospace;
+    font-size: 12vw;
+
+  }
+
+  h3{
+    color: white;
+  }
+
+.travel{
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    color: #f60d3a;
+    background-color: #15151b;
+    border:.125em solid #f60d3a;
+    border-radius: .2em;
+    text-shadow: 0 0 0.5em hsl(0, 0%, 40% ), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 .5em 0 currentColor, 0 0 .5em 0 currentColor;
+    position: relative;
+    z-index: 1;
+    transition: 600ms;
+  }
+  
+  .travel::before{
+    background: #f60d3a;
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: 300ms;
+  }
+  
+  .travel:hover::before, .travel:focus::before{
+    transition: 300ms;
+    width: 100%;
+ 
+  }
+
+  .travel:hover, .travel:focus{
+    background-color: #f60d3a;
+    color: white;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  .cv{
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    color: #087ccc;
+    background-color: #15151b;
+    border:.125em solid #087ccc;
+    border-radius: .2em;
+    text-shadow: 0 0 0.5em hsl(0, 0%, 40% ), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 .5em 0 currentColor, 0 0 .5em 0 currentColor;
+    position: relative;
+    z-index: 1;
+    transition: 600ms;
+  }
+  
+  .cv::before{
+    background: #087ccc;
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: 300ms;
+  }
+  
+  .cv:hover::before, .cv:focus::before{
+    transition: 300ms;
+    width: 100%;
+ 
+  }
+
+  .cv:hover, .cv:focus{
+    background-color: #087ccc;
+    color: white;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  .home {
+    height: 100%;
+  }
+
+  .content1 {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .intro {
+    color: white;
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    display:inline-block;
+    font-size: 2vw;
+  }
+
+.intro::before, .intro::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+
+  .intro::before{
+    background-color: #15151b;
+    animation: typewriter 7s steps(75)  forwards;
+  
+  }
+
+  .intro::after{
+    width: .125em;
+    background: #f60d3a;
+    animation: typewriter 7s steps(75)  forwards, blink 800ms steps(75) infinite;
+  }
+  
+  @keyframes typewriter{
+    to{
+      left: 100%;
+    }
+  }
+  @keyframes blink{
+      to{
+        background: transparent;
+      }
+
+  }
+  
+  .home2 {
+    max-height: 100vh;
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    align-items: flex-start;
+  }
+
+  .image{
+    height: 60vh;
+    width: 20%;
+  }
+
+  .BIO{
+    border-right: 1px solid #525152;
+    width: 150%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tittles{
+    margin-bottom: 0;
+  }
+  
+  .tittles h3{
+    margin-bottom: 0;
+    text-align: center;
+    color: #15151b;
+    align-items: center;
+    font-size: 2vw;
+    -webkit-text-stroke: 0.01px black;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .info h3{
+    margin-right: 2%;
+    margin-left: 5%;
+    margin-bottom: 0;
+    color:#f60d3a;
+  }
+  
+  .info p{
+    margin-right: 2%;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 1px;
+    color: white;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+  .socials img {
+    max-width: 30%;
+  }
+
+  .socials h3{
+    font-size: 4vw;
+  }
+
+  .continuation p{
+    margin-right: 2%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    color: white;
+  }
+
+  .continuation button{
+    margin-left: 7%;
+  }
+
+  .content3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home3 {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Oswald", sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    border-radius: 15px;
+	  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.title {
+  display: block;
+}
+.content {
+  display: flex;
+}
+
+#container1{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container2{
+  background-color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container:hover {
+  width: 95%;
+  height: 40vh;
+  cursor: pointer;
+}
+
+.container.clicked {
+  width: 95%;
+  height: 80vh;
+}
+
+.container:not(.clicked) {
+  height: 10%;
+}
+
+.container:not(.clicked) h3{
+  display: flex;
+  font-size: 2vw;
+}
+
+.container.clicked h3 {
+  display: none;
+}
+
+#container3-1,
+#container3-2 {
+  background-color: #087ccc;
+  width: 20%;
+  height: 50%;
+  margin: 2%;
+  transition: all 0.5s ease;
+  border-radius: 20%;
+  background-position: center;
+}
+
+#container3-1 p,
+#container3-2 p{
+  display: none;
+}
+
+#container3-1 a,
+#container3-2 a{
+  display: none;
+}
+
+#container3-1 {
+  background-image: url('cert1.png');
+  background-size: cover;
+}
+
+#container3-2 {
+
+  background-image: url('cert2.png');
+  background-size: cover;
+}
+
+.container:not(.clicked) #container3-1,
+.container:not(.clicked) #container3-2 {
+  display: none;
+}
+
+.container.clicked #container3-1:hover,
+.container.clicked #container3-2:hover {
+  width: 20%;
+  height: 80%;
+  cursor: pointer;
+}
+
+.container.clicked #container3-1.clicked,
+.container.clicked #container3-2.clicked {
+  width: 40%;
+  height: 80%;
+  cursor: pointer;
+  margin: 1%;
+  background-image: none;
+}
+
+.container.clicked #container3-1.clicked + .container:not(.clicked),
+.container.clicked #container3-2.clicked + .container:not(.clicked) {
+  height: 40%;
+}
+
+.container.clicked #container3-1.clicked p,
+.container.clicked #container3-2.clicked p{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 200%;
+  color: white;
+
+}
+
+.container.clicked #container3-1.clicked a,
+.container.clicked #container3-2.clicked a{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: #f60d3a;
+  font-size: 200%;
+}
+
+#container4-1,
+#container4-2,
+#container4-3{
+  background-color: #f60d3a;
+  width: 20%;
+  height: 50%;
+  margin: 2%;
+  transition: all 0.5s ease;
+  border-radius: 20%;
+  background-position: center;
+}
+
+
+
+#container4-1 {
+  background-image: url('lang1.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  position: center;
+}
+
+#container4-2 {
+
+  background-image: url('lang2.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  position: center;
+}
+
+#container4-3 {
+
+  background-image: url('lang3.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  position: center;
+}
+
+#container4-1 p,
+#container4-2 p,
+#container4-3 p{
+  display: none;
+}
+
+#container4-1 a,
+#container4-2 a,
+#container4-3 a{
+  display: none;
+}
+
+.container:not(.clicked) #container4-1,
+.container:not(.clicked) #container4-2,
+.container:not(.clicked) #container4-3 {
+  display: none;
+}
+
+.container.clicked #container4-1:hover,
+.container.clicked #container4-2:hover,
+.container.clicked #container4-3:hover {
+  width: 20%;
+  height: 80%;
+  cursor: pointer;
+}
+
+.container.clicked #container4-1.clicked,
+.container.clicked #container4-2.clicked,
+.container.clicked #container4-3.clicked {
+  width: 40%;
+  height: 80%;
+  cursor: pointer;
+  margin: 1%;
+  background-image: none;
+}
+
+.container.clicked #container4-1.clicked + .container:not(.clicked),
+.container.clicked #container4-2.clicked + .container:not(.clicked),
+.container.clicked #container4-3.clicked + .container:not(.clicked) {
+  height: 40%;
+}
+
+.container.clicked #container4-1.clicked p,
+.container.clicked #container4-2.clicked p,
+.container.clicked #container4-3.clicked p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  font-size: 200%;
+  margin:5%;
+  color: white;
+
+}
+
+.container.clicked #container4-1.clicked a,
+.container.clicked #container4-2.clicked a,
+.container.clicked #container4-3.clicked a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  color: #087ccc;
+  font-size: 200%;
+  margin:5%;
+}
